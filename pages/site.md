@@ -23,10 +23,28 @@ function getUrlVars() {
   return vars;
 }
 
+// processing function
+function doStuff(data) {
+    //Data is usable here
+    console.log(data.indexOf() > -1);
+}
+
 // Using the jQuery library
 var first = getUrlVars()["site"];
 
-var mystring = "<img src='/images/overviews/" +  first + "_overview.png' width='250' height='250'/>"
+var mystring = "<img src='../images/overviews/" +  first + "_overview.png' width='250' height='250'/>"
+
+function parseData(url, test, callBack) {
+Papa.parse(url, { 
+      download: true,
+      header: true,
+      complete: function(results) {
+        callBack(results, test);
+      }
+      });
+};
+
+parseData('http://europhen.org/assets/data/sites.csv', first, doStuff);
 
 $('.results').html(mystring);
 

@@ -190,27 +190,21 @@ og_type:                            'website'
 #  Open _data/socialmedia.yml to adjust the left and right topbar navigation
 #
 
-socialmedia:
-    twitter: koen_hufkens
-    facebook: koenhufkens
+# socialmedia:
+#    twitter: koen_hufkens
+#    facebook: koenhufkens
 
 
 # Team names, titles and social links
 pi:
-- name: Koen Hufkens
-  pic: user
-  position: Ecologist<br>(Harvard University)
+- name: Lisa Wingate
+  pic: lisa
+  position: Senior Scientist, Ecologist<br>(INRA Bordeaux)
   social:
-    - title: twitter
-      url: https://twitter.com/koen_hufkens
-    - title: linkedin
-      url: https://www.linkedin.com/pub/koen-hufkens/3/a49/639
-    - title: github
-      url: http://github.com/khufkens
     - title: mail
-      url: mailto:koen.hufkens@gmail.com
+      url: mailto:lisa.wingate@inra.fr
     - title: globe
-      url: http://www.khufkens.com
+      url: https://www.bordeaux.inra.fr/ispa-ecofun/wordpress/
 
 #        ____  _
 #       / __ \(_)________ ___  _______

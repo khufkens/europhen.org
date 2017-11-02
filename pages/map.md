@@ -39,12 +39,12 @@ header: no
 }
 </style>
 
-<link rel="stylesheet" href="http://localhost:4000/assets/css/leaflet.css" />
-<script src="http://localhost:4000/assets/js/leaflet.js"></script>
+<link rel="stylesheet" href="../assets/css/leaflet.css" />
+<script src="../assets/js/leaflet.js"></script>
 <script src="https://npmcdn.com/csv2geojson@latest/csv2geojson.js"></script>
-<script src="http://localhost:4000/assets/js/jquery.js"></script>
-<link href='http://localhost:4000/assets/css/leaflet.fullscreen.css' rel='stylesheet' />
-<script src='http://localhost:4000/assets/js/leaflet.fullscreen.min.js'></script>
+<script src="../assets/js/jquery.js"></script>
+<link href='../assets/css/leaflet.fullscreen.css' rel='stylesheet' />
+<script src='../assets/js/leaflet.fullscreen.min.js'></script>
 
 
 <div id="mapid" style="width: 600px%; height: 750px; z-index:0;"></div>
