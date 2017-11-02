@@ -1,0 +1,14 @@
+- name: GitHub
+  url: http://github.com/khufkens
+  class: icon-github
+  title: Code and Data
+
+- name: YouTube
+  url: https://www.youtube.com/playlist?list=PLmbEuSZcfvqpEUFPFSSkjHMzYADYE4sUF
+  class: icon-youtube
+  title: "COBECORE movies"
+
+- name: Twitter
+  url: http://twitter.com/koen_hufkens
+  class: icon-twitter
+  title: "COBECORE news on twitter"

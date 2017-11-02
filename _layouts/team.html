@@ -1,0 +1,146 @@
+---
+layout: default
+format: post
+---
+
+<style type="text/css">
+
+a {
+	text-decoration: none !important;
+}
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+.list-inline{
+	padding-left:0;
+	list-style:none;
+	margin-left:-5px;
+	text-decoration: none !important;
+}
+
+.list-inline > li{
+	display:inline-block;
+	padding-left:5px;
+	padding-right:5px;
+	text-decoration: none !important;
+}
+
+</style>
+
+<div class="row t30">
+	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				{% if page.image.title %}
+				<figure>
+					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
+
+					{% if page.image.caption_url and page.image.caption %}
+					<figcaption class="text-right">
+						<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
+					</figcaption>
+					{% elsif page.image.caption %}
+					<figcaption class="text-right">
+						{{ page.image.caption }}
+					</figcaption>
+					{% endif %}
+				</figure>
+				{% endif %}
+
+				<div itemprop="name">
+					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+					<h1>{{ page.title }}</h1>
+				</div>
+			</header>
+
+			{% if page.teaser %}
+			<p class="teaser" itemprop="description">
+				{{ page.teaser }}
+			</p>
+			{% endif %}
+
+			<div itemprop="articleSection">
+			
+<!-- Team data -->
+			<br>
+			<br>
+			<div class="row">
+                {% for member in site.pi %}
+                <div class="medium-6 columns"">
+                    <div class="team-member">
+                        <img src="{{ site.url }}/images/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <h4>{{ member.name }}</h4>
+                        <p>{{ member.position }}</p>
+                        <ul class="list-inline social-buttons">
+                            {% for network in member.social %}
+                            <li><a href="{{ network.url }}"><i class="icon-{{ network.title }}"></i></a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        
+            <div class="row">
+                {% for member in site.people %}
+                <div class="medium-6 columns"">
+                    <div class="team-member">
+                        <img src="{{ site.url }}/images/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <h4>{{ member.name }}</h4>
+                        <p>{{ member.position }}</p>
+                        <ul class="list-inline social-buttons">
+                            {% for network in member.social %}
+                            <li><a href="{{ network.url }}"><i class="icon-{{ network.title }}"></i></a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+<!-- Team data -->
+
+			</div>
+
+			{% if page.show_meta == true %}
+			{% include _meta_information.html %}
+			{% endif %}
+
+			{% if page.comments == true %}
+			{% include _comments.html %}
+			{% endif %}
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	{% if page.sidebar == "left" %}
+	<div class="medium-4 columns medium-pull-8">
+		{% include _sidebar.html %}
+	</div><!-- /.medium-4.columns -->
+	{% endif %}
+
+
+	{% if page.sidebar == "right" %}
+	<div class="medium-4 columns">
+		{% include _sidebar.html %}
+	</div><!-- /.medium-4.columns -->
+	{% endif %}
+</div><!-- /.row -->

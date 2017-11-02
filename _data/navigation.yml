@@ -1,0 +1,27 @@
+- title: Start
+  url: "/"
+  side: left
+
+- title: News
+  url: "/blog/archive/"
+  side: right
+
+- title: Site Map
+  url: "/map/"
+  side: left
+
+- title: Gallery
+  url: "/gallery/"
+  side: left
+
+- title: FAQ
+  url: "/faq/"
+  side: right
+
+- title: Tools
+  url: "/tools/"
+  side: right
+
+- title: Team
+  url: "/team/"
+  side: right
