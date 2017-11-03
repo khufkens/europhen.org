@@ -9,7 +9,7 @@ tags:
 categories:
     - blog
 header:
-   image_fullwidth: "header/header_9.jpg"
+   image_fullwidth: "header/header_3.jpg"
 ---
 
 Getting the website up and running.

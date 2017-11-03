@@ -190,10 +190,8 @@ og_type:                            'website'
 #  Open _data/socialmedia.yml to adjust the left and right topbar navigation
 #
 
-# socialmedia:
-#    twitter: koen_hufkens
-#    facebook: koenhufkens
-
+socialmedia:
+    twitter: EcoFunTeam
 
 # Team names, titles and social links
 pi:

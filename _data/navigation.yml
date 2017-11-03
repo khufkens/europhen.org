@@ -6,7 +6,7 @@
   url: "/blog/archive/"
   side: right
 
-- title: Site Map
+- title: Map
   url: "/map/"
   side: left
 
@@ -14,14 +14,18 @@
   url: "/gallery/"
   side: left
 
-- title: FAQ
-  url: "/faq/"
-  side: right
-
-- title: Tools
-  url: "/tools/"
-  side: right
-
 - title: Team
   url: "/team/"
   side: right
+
+- title: Installation
+  url: "/installation/"
+  side: right
+  dropdown:
+  - title: Quick Install Guide
+    url: "/installation/quick-install/"
+  - title: Full Protocol
+    url: "/installation/full-protocol/"
+  - title: Software Tools
+    url: "/installation/tools/"
+ 
