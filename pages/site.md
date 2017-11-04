@@ -5,9 +5,6 @@ permalink: "/site/"
 header: no
 ---
 <script src="../assets/js/jquery.js"></script>
-<script src="https://npmcdn.com/csv2geojson@latest/csv2geojson.js"></script>
-<script src="../assets/js/papaparse.min.js"></script>
-
 
 <div class="image"></div>
 <div class="title"></div>
