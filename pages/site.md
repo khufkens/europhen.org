@@ -48,8 +48,6 @@ $('.content').html(content);
 
 var data = "{{site.url}}" + "/assets/data/" + site + ".csv";
 
-console.log(data);
-
 Plotly.d3.csv(data, function(rows){
     var gcc = {
       type: 'scatter',                    
