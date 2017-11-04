@@ -4,7 +4,7 @@ title: ""
 permalink: "/site/"
 header: no
 ---
-<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/jquery.js" type="text/javascript"></script>
 
 <div class="image"></div>
 <div class="title"></div>
