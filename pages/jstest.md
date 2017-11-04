@@ -13,7 +13,6 @@ header: no
 // jsonify the data in _data and provided
 // by ruby (doesn't require reading in any
 // new csv data
-var sites = {{ site.data.sites | jsonify }};
 
 console.log("sites");
 
