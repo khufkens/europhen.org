@@ -4,13 +4,12 @@ title: ""
 permalink: "/site/"
 header: no
 ---
-<script src="../assets/js/jquery.js" type="text/javascript"></script>
 
 <div class="image"></div>
 <div class="title"></div>
 <div class="metadata"></div>
 
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 
 // jsonify the data in _data and provided
