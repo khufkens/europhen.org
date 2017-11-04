@@ -10,10 +10,6 @@ header: no
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 
-// jsonify the data in _data and provided
-// by ruby (doesn't require reading in any
-// new csv data
-
 console.log("sites");
 
 </script>
