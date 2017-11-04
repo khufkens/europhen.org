@@ -25,7 +25,7 @@ function getUrlVars() {
 
 var site = getUrlVars()["site"];
 
-var imagestring = "<img src='../images/overviews/" + site + "_overview.png' width='250' height='250'/>"
+var imagestring = "<img src='../images/overviews/" + site + "_overview.png' width='250' height='250'/>";
 
 $('.image').html(imagestring);
 
