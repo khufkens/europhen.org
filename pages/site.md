@@ -1,12 +1,12 @@
 ---
-layout: page-fullwidth
+layout: page
 title: ""
 permalink: "/site/"
 header: no
 ---
 <div class = "row">
-	<div class = "medium-3 columns image"></div>
-	<div class="medium-9 columns content"></div>
+	<div class = "medium-4 columns image"></div>
+	<div class="medium-8 columns content"></div>
 </div>
 <div class = "row">
 	<br>

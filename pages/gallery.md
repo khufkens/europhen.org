@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: page
 title: "Gallery"
 permalink: "/gallery/"
 header: no
@@ -11,7 +11,7 @@ header: no
       <h4>{{ site.shortname }}</h4>
       <div class="team-member">
       <a href="/site/index.html?site={{site.shortname}}">
-        <img src="/images/overviews/{{site.shortname}}_overview.png" width="150" height="150">
+        <img src="/images/overviews/{{site.shortname}}_overview.png">
       </a>
     	</div>
     </div>
