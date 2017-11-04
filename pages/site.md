@@ -54,12 +54,7 @@ var title = "<h1>" + sites[index].sitename + " (" + sites[index].shortname + ")"
 
 console.log(sites[index]);
 
-// Add the contents of options[0] to #foo:
-$('.metadata').html(makeUL(sites[index]));
-
 $('.title').html(title);
-
-
 
 </script>
 	
