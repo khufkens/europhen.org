@@ -41,7 +41,7 @@ var camera = "<b>Camera Type: </b>" + sites[index].camera + "<br>";
 
 var content = title + species + country + latitude + longitude + camera;
 
-var imagestring = "<img src='../images/overviews/" + site + "_overview.png' width='250' height='250'/>";
+var imagestring = "<img src='../images/overviews/" + site + "_overview.jpg' width='250' height='250'/>";
 
 $('.image').html(imagestring);
 $('.content').html(content);

@@ -11,7 +11,7 @@ header: no
       <h4>{{ site.shortname }}</h4>
       <div class="team-member">
       <a href="/site/index.html?site={{site.shortname}}">
-        <img src="/images/overviews/{{site.shortname}}_overview.png">
+        <img src="/images/overviews/{{site.shortname}}_overview.jpg">
       </a>
     	</div>
     </div>
