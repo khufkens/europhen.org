@@ -203,6 +203,20 @@ pi:
       url: mailto:lisa.wingate@inra.fr
     - title: globe
       url: https://www.bordeaux.inra.fr/ispa-ecofun/wordpress/
+- name: Koen Hufkens
+  pic: koen
+  position: Project Lead, Ecologist<br>(INRA Bordeaux / Ghent University)
+  social:
+    - title: twitter
+      url: https://twitter.com/koen_hufkens
+    - title: linkedin
+      url: https://www.linkedin.com/pub/koen-hufkens/3/a49/639
+    - title: github
+      url: http://github.com/khufkens
+    - title: mail
+      url: mailto:koen.hufkens@gmail.com
+    - title: globe
+      url: http://www.khufkens.com
 
 #        ____  _
 #       / __ \(_)________ ___  _______
