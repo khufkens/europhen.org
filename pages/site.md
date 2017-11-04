@@ -52,13 +52,13 @@ console.log(data);
 
 Plotly.d3.csv(data, function(rows){
     var gcc = {
-      type: 'scatter',                    // set the chart type
-      mode: 'lines',                      // connect points with lines
+      type: 'scatter',                    
+      mode: 'lines',                      
       name: 'Gcc',
-      x: rows.map(function(row){          // set the x-data
+      x: rows.map(function(row){          
         return row['date'];
       }),
-      y: rows.map(function(row){          // set the x-data
+      y: rows.map(function(row){          
         return row['gcc'];
       }),
       line: {
@@ -68,13 +68,13 @@ Plotly.d3.csv(data, function(rows){
     };
 
     var rcc = {
-      type: 'scatter',                    // set the chart type
-      mode: 'lines',                      // connect points with lines
+      type: 'scatter',                    
+      mode: 'lines',                      
        name: 'Rcc',
-      x: rows.map(function(row){          // set the x-data
+      x: rows.map(function(row){          
         return row['date'];
       }),
-      y: rows.map(function(row){          // set the x-data
+      y: rows.map(function(row){          
         return row['rcc'];
       }),
       line: {
@@ -84,13 +84,13 @@ Plotly.d3.csv(data, function(rows){
     };
 
     var bcc = {
-      type: 'scatter',                    // set the chart type
-      mode: 'lines',                      // connect points with lines
+      type: 'scatter',                    
+      mode: 'lines',                      
       name: 'Bcc',
-      x: rows.map(function(row){          // set the x-data
+      x: rows.map(function(row){          
         return row['date'];
       }),
-      y: rows.map(function(row){          // set the x-data
+      y: rows.map(function(row){          
         return row['bcc'];
       }),
       line: {
@@ -100,12 +100,12 @@ Plotly.d3.csv(data, function(rows){
     };
     
     var layout = {
-      yaxis: {title: "Chromatic Coorindate (Gcc/Rcc/Bcc)"},       // set the y axis title
+      yaxis: {title: "Chromatic Coorindate (Gcc/Rcc/Bcc)"},       
       xaxis: {
-        showgrid: false,                  // remove the x-axis grid lines
-        tickformat: "%Y-%m-%d"              // customize the date format to "month, day"
+        showgrid: false,                  
+        tickformat: "%Y-%m-%d"              
       },
-      margin: {                           // update the left, bottom, right, top margin
+      margin: {                           
         l: 100, b: 50, r: 50, t: 50
       }
     };
