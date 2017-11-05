@@ -2,6 +2,10 @@
   url: "/"
   side: left
 
+- title: About
+  url: "/about/"
+  side: left
+
 - title: News
   url: "/blog/archive/"
   side: right
@@ -22,10 +26,8 @@
   url: "/installation/"
   side: right
   dropdown:
-  - title: Quick Install Guide
-    url: "/installation/quick-install/"
-  - title: Full Protocol
-    url: "/installation/full-protocol/"
+  - title: Installation Protocol
+    url: "/installation/protocol/"
   - title: Software Tools
     url: "/installation/tools/"
  

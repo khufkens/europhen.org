@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'EUROPHEN'
+title: 'Europhen'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'digitally tracking phenology across europe'
@@ -24,6 +24,7 @@ credits: '<p>Created with <a href="http://phlow.github.io/feeling-responsive/">F
 author: Koen Hufkens
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
+dataurl: 'data.europhen.org'
 url: 'http://europhen.org'
 baseurl: ''
 
