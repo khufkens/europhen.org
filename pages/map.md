@@ -51,9 +51,9 @@ header: no
 <script type="text/javascript">
 
 	var mymap = L.map('mapid',{fullscreenControl: true }).setView([52, 13], 4);
-	L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.jpg',
+	L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpg',
 	{	maxZoom: 18,
-		attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012',
+		attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
 		id: 'mapbox.streets'
 	}).addTo(mymap);
 
@@ -72,32 +72,22 @@ function makeGeoJSON(csvData) {
         lonfield: 'lng',
         delimiter: ','
     }, function(err, data) {
-      console.log(data);
-      
       L.geoJson(data, {
     	pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng,
              {
              radius: 6,
   			 fillColor: feature.properties.colour,
-    		 color: "red",
+    		 color: "yellow",
     		 weight: 0,
     		 opacity: 1,
-    		 fillOpacity: 0.5
+    		 fillOpacity: 0.8
     		 }
          );
         },
         onEachFeature: function (feature, layer) {
-                layer.bindTooltip(
-                 '<b>' + feature.properties.sitename + '</b>' +
-                 '<br> short name: ' + feature.properties.shortname +
-                 '<br> running time: ' + feature.properties.operation);
-                layer.on('mouseover', function (e) {
-           	 	 	this.openPopup();
-        		});
-        		layer.on('mouseout', function (e) {
-            		this.closePopup();
-        		});
+                layer.bindPopup(
+                '<img src="/images/overviews/' + feature.properties.shortname + '_overview.jpg"><br>' + '<b><a href="http://europhen.org/site/index.html?site=' + feature.properties.shortname + ' ">' + feature.properties.sitename + '</a></b> (' + feature.properties.shortname + ')');
         }
         }).addTo(mymap);
       
