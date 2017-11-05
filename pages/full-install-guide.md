@@ -37,19 +37,20 @@ The manual is quite detailed and has lots of additional information on camera co
 
 # Camera configuration, network & power connections
 
-## Supplying Power and Network Connections to the Camera
+## Supplying Power and Network to the Camera
 
 In the figure to the right a typical lab setup for configuring a camera is shown.  We typically use a small network hub connected to the local network so that we can have the camera and another computer connected to the same network.  The camera has a power light indicator on the front and it should be lit.  The Ethernet connector on the back of the camera also has a light which indicates whether the Ethernet port link has been established.  The camera by default is configured to get its network address from a DHCP server so the network hub should be connected to a network with a DHCP server 
 
-### Power-over-Ethernet (POE)
+### Power-over-Ethernet (PoE)
 
-If your site has AC line power, then we will have provided you with a POE (power-over-ethernet) injector (illustrated in the photo on the right), which plugs into the wall and which allows power to the camera to be sent over the standard ethernet (cat 5, 5e, 6) cable which we have sent you. One end of the ethernet cable goes to the surge protector, the other to the “data & power out” socket on the POE injector. Then connect one end of a short Ethernet cable to the “data in” socket on the POE injector, and the other to your network hub. Then plug the POE injector into an electrical outlet.
+If your site has AC line power, then we will have provided you with a PoE (power-over-ethernet) injector (illustrated in the photo on the right), which plugs into the wall and which allows power to the camera to be sent over the standard ethernet (cat 5, 5e, 6) cable which we have sent you. One end of the ethernet cable goes to the surge protector, the other to the “data & power out” socket on the POE injector. Then connect one end of a short Ethernet cable to the “data in” socket on the POE injector, and the other to your network hub. Then plug the POE injector into an electrical outlet.
 
 ### Combination Ethernet/Power Cable
 
 If your site uses DC power (solar, generator, etc.), then we will have provided you with a special combination Ethernet/power cable (the white cable in the picture above). This eliminates the need for a separate power cable to the camera. The end with the male power jack goes to the camera (plug the power jack into the socket on the back of the camera, and plug the ethernet connector into to the surge protector, and then a short cable from the surge protector to the camera). The end with the female power jack has a male jack with two terminals (marked + and -) attached. Run a wire from this jack to your battery bank (the red and black wires in the picture on the right). Before connecting power, however, plug the Ethernet connector into your network hub, as the camera requires an Ethernet connection when it is powered up. Note that when you use the combination Ethernet/power cable, or a separate 12 V DC power cable, it is still possible for lightning damage to occur to the camera even when you use an Ethernet surge protector. This is why we recommend powering the camera via POE if possible.  When testing in the lab, you can use a 12V power supply, a battery, or for configuration purposes a POE injector as described above.  Or simply use the separate power adapter that came with your camera.
 
-## Finding the camera on your network and viewing live images
+## Finding the camera on your network
+
 Once your camera is powered on and connected to the network you will need to find your camera’s network IP address.  To do this you will use another computer connected to the same LAN as the camera.  First verify that the computer you are using was able to connect to the network and get an IP via DHCP.  If this is not the case, you may need to get help from the local network admin with your setup. 
 
 The easiest way to find the camera’s IP address is to install StarDot Tools from the CD included with the camera (Windows only, sorry).  Run the program and click "refresh".  The camera should be detected and the camera’s IP address shown (you may have to run Tools as administrator in Windows, depending on your settings). See the Troubleshooting section below if the IP address is not automatically detected.  
