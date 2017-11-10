@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'Europhen'
+title: 'EuroPhen'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'digitally tracking phenology across europe'
@@ -206,7 +206,7 @@ pi:
       url: https://www.bordeaux.inra.fr/ispa-ecofun/wordpress/
 - name: Koen Hufkens
   pic: koen
-  position: Project Lead, Ecologist<br>(INRA Bordeaux / Ghent University)
+  position: Ecologist<br>(INRA Bordeaux / Ghent University)
   social:
     - title: twitter
       url: https://twitter.com/koen_hufkens
