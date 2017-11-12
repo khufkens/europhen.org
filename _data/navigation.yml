@@ -1,11 +1,7 @@
 - title: Start
   url: "/"
   side: left
-
-- title: About
-  url: "/about/"
-  side: left
-
+    
 - title: News
   url: "/blog/archive/"
   side: right
@@ -18,12 +14,8 @@
   url: "/gallery/"
   side: left
 
-- title: Team
-  url: "/team/"
-  side: right
-
-- title: Installation
-  url: "/installation/"
+- title: About
+  url: "/about/"
   side: right
   dropdown:
   - title: Installation Protocol
