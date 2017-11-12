@@ -27,6 +27,7 @@ author: Koen Hufkens
 url: 'http://europhen.org'
 baseurl: ''
 dataurl: 'data.europhen.org'
+ftpurl: 'upload.europhen.org'
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages

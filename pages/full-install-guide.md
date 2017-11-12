@@ -178,7 +178,7 @@ To alter the default server settings and use the {{site.title}} or local servers
 
 ![](../../images/documentation/server_settings.png)
 
-Edit the server settings by either entering an IP address or a server url. Data for {{site.title}} should use url: **{{site.dataurl}}**. Multiple servers are allowed by entering their respective IP or url on separate lines.
+Edit the server settings by either entering an IP address or a server url. Data for {{site.title}} should use url: **{{site.ftpurl}}**. Multiple servers are allowed by entering their respective IP or url on separate lines.
 
 ![](../../images/documentation/server_settings_edit.png)
 
