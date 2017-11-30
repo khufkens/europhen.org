@@ -221,7 +221,9 @@ The manual is quite detailed and has lots of additional information on camera co
 
 ## Camera Housing Installation
 
-The camera housing we typically use is a Vitek (model VT-EH10) Indoor-Outdoor Enclosure.  It will cost about $35 (the price seems to fluctuate, between $25 and $50.)  Anything similar to this should be fine.   There is a sliding mount inside the housing to which the camera attaches with a short screw. This is usually a ¼-20 screw (which is included with the housing), but some cameras have shipped recently with M6 threads (if we sent you a camera with M6 threads, we should have also included an M6 screw). The sliding mount snaps in to the rails on the bottom of the housing. Please remember to remove the camera's lens cap before installing the camera! Note that the camera should be slid forward in its housing, so the lens is almost touching the window, to minimize the potential for reflections.
+For the StarDot camearas we typically use is a Vitek (model VT-EH10) Indoor-Outdoor Enclosure. Anything similar to this should be fine. There is a sliding mount inside the housing to which the camera attaches with a short screw. The sliding mount snaps in to the rails on the bottom of the housing. Other cameras might need custom waterproof housing. We recommend making sure that hardware stays fog free by using silica gel packages or heating where necessary. Remember that battery operated cameras might be prone to power loss in very cold conditions.
+
+Please remember to remove the camera's lens cap before installing the camera! Note that any camera should be slid forward in its housing, so the lens is almost touching the window, to minimize the potential for reflections.
  
 ## Camera Field Installation
 
@@ -235,12 +237,13 @@ Here are some basic guidelines to keep in mind during camera deployments:
 
 ## Focusing the Camera
 
-Focusing works best on a sunny day with a nearby laptop connected to the camera's configuration pages. Cameras are focused in the lab before being shipped, but during deployment you will probably want to fine-tune the focus depending on the distance from the camera to the vegetation of interest.  We recommend practicing this procedure in the lab so that you are familiar with the procedure prior to deployment.
+For conventional cameras make sure the lens is set to manual focus (when possible) and focussed on infinity. When using the StarDot cameras focusing works best in a lab setting using a nearby window to focus on a distant object. If you want to adjust the focus, this is best accomplished while viewing the camera image on a laptop / computer.
 
-If you want to adjust the focus, this is best accomplished while viewing the camera image on a laptop.  You will want to do this with the camera mounted on the tower so that you can verify that the field of view is as desired. The standard lens we recommend is the 6.2 mm, which is relatively easy to focus, as it has just a single focus knob. The 4-10 mm zoom lenses sold by StarDot can yield great images, but with zoom, iris, and focus, they can be much more difficult to focus. 
+If no perfect focus was achieved in the lab you should repeat the procedure with the camera mounted on the tower so that you can verify that the field of view is as desired. The standard lens we recommend is the 6.2 mm, which is relatively easy to focus, as it has just a single focus knob. The 4-10 mm zoom lenses sold by StarDot can yield great images, but with zoom, iris, and focus, they can be much more difficult to focus. 
 
 Here are the basic steps for adjusting the camera focus:
 
 - On the camera's config pages, change "Resolution" to "688x480 NTSC Focus Mode" (last option in the drop-down under Image -> Processing) and hit "APPLY".
 - Click on "Pop-up Live Image" in the upper right-hand corner to open a large image. In focus mode, only a fraction of the total image is displayed, but this way the refresh rate is very fast and it is quite easy to get the focus very sharp.
 - Adjust the focus ring (it can be quite sensitive) so that the image is sharp. You may find it helps to focus on a specific object in the image – such as a branch. Tighten the screw on the focus ring when finished. Change the resolution back to its original value ("1296x960 QFULL*", see reference image below) and hit "APPLY".
+
