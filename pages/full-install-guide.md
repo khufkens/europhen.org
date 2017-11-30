@@ -49,9 +49,7 @@ When using point-and-shoot, digital reflex or plant cameras it is often impossib
 
 	exiftool -r '-FileName<CreateDate' -d '%Y/%m/SITENAME_%Y_%m_%d_%H%M%S.%%le' DESTINATION_FOLDER
 
-	# Where SITENAME is your sitename
-	# and DESTINATION_FOLDER an existing destination path
-	# where to store the renamed images
+Where SITENAME is your sitename and DESTINATION_FOLDER an existing destination path where to store the renamed images.
 
 ## Camera settings
 
