@@ -23,19 +23,45 @@ You can find an overview of the {{site.title}} network at:
 
 [{{site.url}}/about/]({{site.url}}/about/)
 
-This configuration guide is specific to StarDot cameras, the preferred camera to use for phenological monitoring.  They contain an embedded version of Linux and are capable of complex automated custom configurations. Our default configuration will set up the camera to upload images to the {{site.title}} server on a regular schedule throughout the day.  We have deployed these StarDot cameras in a wide variety of environments and have found them to be very robust and reliable.  For more information on specific configurations you can check:
+This configuration guide contains two parts. A short protocol defining naming conventions and settings to which all cameras (regardless of type) should adhere to. The camera settings ensure acquisition of usable data within the context of tracking vegetation colour changes throughout the year. A consistent naming convention ensures interoperability of software through the network (and easy re-processing when using other users' data).
+
+A second part is specific to StarDot cameras, the preferred camera to use for phenological monitoring.  They contain an embedded version of Linux and are capable of complex automated custom configurations. Our default configuration will set up the camera to upload images to the {{site.title}} server on a regular schedule throughout the day.  We have deployed these StarDot cameras in a wide variety of environments and have found them to be very robust and reliable.  For more information on specific configurations you can check:
 
 [{{site.url}}/installation/tools/]({{site.url}}/installation/tools/)
 
-We highly recommend configuring the camera in a lab with stable power and network connections before deployment.  Once the camera is configured, testing with the network equipment which will be installed in the field (while still in the lab) is also recommended.
+In general, regardless of the camera used we highly recommend configuring the camera in a lab with stable power and network connections before deployment.  Once the camera is configured, testing with the network equipment which will be installed in the field (while still in the lab) is also recommended.
 
-The manuals for StarDot cameras are available here:
+---
 
-[http://www.stardot.com/manuals](http://www.stardot.com/manuals)
+# Naming convention and camera settings
 
-The manual is quite detailed and has lots of additional information on camera configuration.
+## Naming convention and renaming code
 
-# Camera configuration, network & power connections
+Files uploaded to the EuroPhen network should be formatted as such:
+
+	sitename_year_month_day_hoursminutesseconds.jpg
+
+The sitename should only contain alpha-numeric characters, with a lower-caps 'jpg' extension. One exception is allowed for the dash (-). The sitename should *never* contain any underscores (_). For example an image taken at noon on January 1<sup>th</sup> 2008 would be formatted as such:
+
+	mysite_2008_01_01_120000.jpg
+
+When using point-and-shoot, digital reflex or plant cameras it is often impossible to implement the above naming convention directly in camera. However, all conventional digital cameras store the necessary information in the meta-data header of the JPG image. You can convert the filename of the images using the [exiftool](https://www.sno.phy.queensu.ca/~phil/exiftool/) on all operating systems using the following code.
+
+	exiftool -r '-FileName<CreateDate' -d '%Y/%m/SITENAME_%Y_%m_%d_%H%M%S.%%le' DESTINATION_FOLDER
+
+	# Where SITENAME is your sitename
+	# and DESTINATION_FOLDER an existing destination path
+	# where to store the renamed images
+
+## Camera settings
+
+{% include alert alert="When using a camera as a PhenoCam it is mandatory to set the camera white balance to a fixed value to generate usable data! Failing to do so will result in useless data."%}
+
+The exact value of the setting is of lesser importance but we suggest using a **"shade"** or **"cloudy"** white balance setting to generate viable but also aesthetically pleasing images.
+
+---
+
+# StarDot camera configuration, network & power connections
 
 ## Supplying Power and Network to the Camera
 
@@ -68,7 +94,6 @@ Most routers are configured to hand out addresses via DHCP so the camera will us
 ## Change the camera’s default password
 
 Once you can connect to the camera with a computer the first thing you should do is change the default password.  When using a university public IP address, we have had a camera hacked within 2-3 minutes of being connected to the network.  If you are on a local private network behind a router or firewall you are probably safe but we recommend changing the password as soon as possible.  Here are the steps:
-
 
 - Point your browser at the camera’s IP address
 - Click the "config" link at the bottom of the live camera image
@@ -184,6 +209,16 @@ Edit the server settings by either entering an IP address or a server url. Data 
 
 After altering configuration files always push the "Save" button in the main "Manual Config" tab to make changes permanent between reboots of the camera.
 
+## External Information
+
+The manuals for StarDot cameras are available here:
+
+[http://www.stardot.com/manuals](http://www.stardot.com/manuals)
+
+The manual is quite detailed and has lots of additional information on camera configuration.
+
+---
+
 # Camera Deployment
 
 ## Camera Housing Installation
@@ -196,7 +231,7 @@ Here are some basic guidelines to keep in mind during camera deployments:
 
 - Phenology is one goal, but we'd also like good-looking pictures.
 - The camera should be pointed north to minimize lens flare and shadowing. 
-- The image should include a horizon, but the image should be more than 50% canopy and less than 50% sky; the ideal mix is about 20% sky, 80% canopy).
+- The image should include a horizon, but the image should be more than 50% canopy and less than 50% sky; the ideal mix is about 20% sky, 80% canopy.
 - The camera should point somewhat below the horizontal to obtain maximum canopy coverage and also spatial integration (a mounting height of 5-10 m above the canopy is generally good, but the specifics may depend on the nature of your tower, length of cables, etc.).
 - Secure mounting and a stable field of view over time are essential for getting high quality data.  Be sure to mount the camera in such a way as to minimize any camera movement, in a location that is unlikely to be disturbed. Make sure that all screws and nuts are tightened, and that the housing is securely latched closed. Plug large holes in the housing with putty to prevent spiders and yellow jackets from moving in.
 
@@ -211,4 +246,3 @@ Here are the basic steps for adjusting the camera focus:
 - On the camera's config pages, change "Resolution" to "688x480 NTSC Focus Mode" (last option in the drop-down under Image -> Processing) and hit "APPLY".
 - Click on "Pop-up Live Image" in the upper right-hand corner to open a large image. In focus mode, only a fraction of the total image is displayed, but this way the refresh rate is very fast and it is quite easy to get the focus very sharp.
 - Adjust the focus ring (it can be quite sensitive) so that the image is sharp. You may find it helps to focus on a specific object in the image – such as a branch. Tighten the screw on the focus ring when finished. Change the resolution back to its original value ("1296x960 QFULL*", see reference image below) and hit "APPLY".
-

@@ -111,6 +111,36 @@ Plotly.d3.csv(data, function(rows){
     Plotly.plot(document.getElementById('plot'), [bcc, rcc, gcc], layout, {showLink: false});
 });
 
+Plotly.d3.csv(data, function(rows){
+    var gcc = {
+      type: 'scatter',                    
+      mode: 'lines',                      
+      name: 'Gcc',
+      x: rows.map(function(row){          
+        return row['date'];
+      }),
+      y: rows.map(function(row){          
+        return row['gcc'];
+      }),
+      line: {
+        color: 'blue',
+        width: 1
+      }
+    };
+    
+    var layout = {
+      yaxis: {title: "Chromatic Coorindate (Gcc/Rcc/Bcc)"},       
+      xaxis: {
+        showgrid: false,                  
+        tickformat: "%Y-%m-%d"              
+      },
+      margin: {                           
+        l: 100, b: 50, r: 50, t: 50
+      }
+    };
+
+    Plotly.plot(document.getElementById('plot'), [gcc], layout, {showLink: false});
+});
 
 </script>
 	

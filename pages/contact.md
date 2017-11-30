@@ -5,11 +5,7 @@ meta_title: "Contact info"
 teaser: ""
 permalink: "/contact/"
 header:
-   image_fullwidth: "header/header_4.jpg"
-   caption: Sunset in Yangambi (DRC)
-   caption_url: https://goo.gl/maps/ZxrHubWMZso
+  image_fullwidth: header/header_1.jpg
 ---
 
-Please direct all questions regarding the COBECORE project to the [principal investigators](http://www.cobecore.org/team).
-
-Technical questions regarding software as used in the project should be submitted as feature requests or bug reports on the [project's github page](https://www.github.com/khufkens).
+Please direct general questions / inquiries regarding the EuroPhen project to the [project coordinator](http://www.europhen.org/team). Detailed questions, with respect to data management or protocols, can be directed to individual members of the team when needed.
