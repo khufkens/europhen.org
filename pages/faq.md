@@ -1,6 +1,6 @@
 ---
 layout: page
 title: "FAQ"
-permalink: "/installation/faq/"
+permalink: "/faq/"
 header: no
 ---
